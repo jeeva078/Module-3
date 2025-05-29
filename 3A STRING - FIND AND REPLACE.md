@@ -1,30 +1,48 @@
 # Exp.No:3a
-## STRING - FIND AND REPLACE
+## STRING - PYTHON PROGRAM TO PARTITION A STRING AT THE WORD 'WORK'
+
+
 
 ---
 
 ### AIM  
-To write a Python function to accept a string, identify a word to be replaced, and replace it with a new word provided by the user.
+To write a Python function that accepts a string and partitions it into three parts at the first occurrence of the word "work" using the partition() method.
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Input the original string `str1` and the word to be replaced `replace_str`.  
-3. Ask the user to input the new replacement word `str2`.  
-4. Use the `replace()` method in Python to replace all occurrences of `replace_str` in `str1` with `str2`.  
-5. Store the modified string in `str3`.  
-6. Display the original string (`str1`) and the modified string (`str3`).  
-7. Terminate the program.
+Start
+
+Define a function named part that takes a string as input
+
+Use the built-in partition() method on the string with 'work' as the separator
+
+The partition() method will return a tuple with three parts:
+
+The part before 'work'
+
+The word 'work'
+
+The part after 'work'
+
+Return or print the resulting tuple
+
+End
 
 ---
 
 ### PROGRAM
 
 ```
+def part(input_string):
+    string = input_string.split("work")
+    result = (string[0], "work", string[1]) if len(string) > 1 else (string)
+    print(result)
 ```
 
 ### OUTPUT
+![Screenshot (233)](https://github.com/user-attachments/assets/ecd62d31-c467-4af1-8271-ed3de30cec4b)
 
 ### RESULT
+Thus the python program was initiated and executed successfully.
