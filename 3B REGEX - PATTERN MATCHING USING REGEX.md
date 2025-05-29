@@ -1,29 +1,36 @@
 # Exp.No:3b  
-## REGEX - PATTERN MATCHING USING REGEX
+## REGEX - PYTHON PROGRAM TO REPLACE ALL OCCURRENCES OF 5 WITH 'FIVE' IN A STRING
 
 ---
 
 ### AIM  
-To write a Python program that matches a string containing an `'a'` followed by **two to three `'b'` characters** using regular expressions.
+To write a Python program that takes a string as input and replaces all occurrences of the digit 5 with the word "five".
 
----
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Accept a string `str1` from the user.  
-3. Define the regular expression pattern as `r"[a]+b{2,3}"`.  
-4. Use the `re.match()` function to check if the string `str1` matches the pattern.  
-5. If a match is found, print `"Found a match!"`.  
-6. If no match is found, print `"Not matched!"`.  
-7. Terminate the program.
+Start
+
+Take a string input from the user
+
+Use the replace() method to replace all '5' characters with 'five'
+
+Store or print the modified string
+
+End
 
 ---
 
 ### PROGRAM
 
 ```
+import re
+a=input()
+b=re.sub("5", "five", a)
+print(b)
 ```
 ### OUTPUT
+![Screenshot (234)](https://github.com/user-attachments/assets/ac04bebd-aa08-43d2-b31e-eb74912af1ef)
 
 ### RESULT
+Thus the python program was initiated and executed successfully.
