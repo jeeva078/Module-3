@@ -1,30 +1,52 @@
 # Exp.No:3e
-## SEB - STRING SLICING
+## SEB - PYTHON FUNCTION TO CONVERT STRING TO TUPLE AND REMOVE 3RD ELEMENT
 
 ---
 
 ### AIM  
-To write a Python function that accepts a string and forms a new string by reversing the characters from the **4th position to the 10th position** with **alternate characters**, and then prints the new string.
+To write a Python function that accepts a string, converts it into a tuple, removes the 3rd element (index 2), and prints the original and modified tuples along with the removed character.
 
----
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Accept a string as input.  
-3. Take a slice of the input string from index **2** to **10** (Python uses 0-based indexing, so index 2 refers to the 3rd character, i.e., the 4th character in natural terms).  
-4. Reverse the sliced substring.  
-5. Extract every second character from the reversed substring using slicing (`[::2]`).  
-6. Print the final processed string.  
-7. Terminate the program.
+Start
+
+Define a function strtotuple(a) that accepts a string as input
+
+Convert the string into a list using list(a)
+
+Convert the list into a tuple and store it in a variable t
+
+Create a new tuple r that excludes the 3rd element (index 2) using slicing: t[:2] + t[3:]
+
+Print the original tuple t
+
+Print the new tuple r after removal
+
+Print the character that was removed (element at index 2)
+
+End
+
+
 
 ---
 
 ### PROGRAM
 
 ```
+def strtotuple(a):
+    l = list(a)
+    t = tuple(l)
+    r = t[:2] + t[3:]
+    print(t)
+    print(r)
+    print("Character Removed: {}".format(l[2]))
+
 ```
 
 ### OUTPUT
+![Screenshot (237)](https://github.com/user-attachments/assets/07e5a5e7-44a2-4fe5-9d2b-55b2d871f46b)
+
 
 ### RESULT
+Thus the python program was initiated and executed successfully.
